@@ -1,0 +1,37 @@
+﻿@model PatientMVCApp.Models.Patient
+
+<h2>Edit Patient</h2>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label>Age</label>
+        <input asp-for="Age" />
+    </div>
+
+    <div>
+        <label>Gender</label>
+        <input asp-for="Gender" />
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input type="email" asp-for="Email" />
+    </div>
+
+    <br />
+
+    <button type="submit">Update</button>
+
+</form>
+
+<br />
+
+<a href="/Patient">Back to List</a>
